@@ -1,0 +1,69 @@
+.global-presence {
+  padding: 3rem 2rem;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0c112c;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.5px;
+  line-height: 1.3;
+}
+
+.section-subtitle {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  color: #888;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .global-presence {
+    padding: 2rem 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .section-description {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .global-presence {
+    padding: 2rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+}
+

@@ -1,0 +1,264 @@
+.contact {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  text-align: center;
+}
+
+.contact .section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0c112c;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.3px;
+  line-height: 1.3;
+}
+
+.contact-subtitle {
+  font-size: 1.15rem;
+  color: #666;
+  margin-top: 0.25rem;
+  margin-bottom: 2.5rem;
+  font-weight: 400;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-section {
+  text-align: center;
+  background-color: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border: 1px solid #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-color: #0066cc;
+}
+
+.contact-icon {
+  font-size: 2.25rem;
+  margin-bottom: 0.75rem;
+  display: block;
+  line-height: 1;
+}
+
+.contact-heading {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.contact-info {
+  color: #666;
+}
+
+.contact-info p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.contact-info a {
+  color: #0066cc;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.contact-info a:hover {
+  color: #0052a3;
+  text-decoration: underline;
+}
+
+.social-section {
+  grid-column: span 1;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+  width: 100%;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  color: #333;
+  text-decoration: none;
+  padding: 0.625rem 1.25rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 180px;
+  background-color: #f8f9fa;
+  border: 1px solid #e8e8e8;
+}
+
+.social-link:hover {
+  background-color: #0066cc;
+  color: #fff;
+  transform: translateY(-2px);
+  border-color: #0066cc;
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.25);
+}
+
+.social-link svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.social-link span {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.contact-button {
+  margin-top: 3rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 102, 204, 0.25);
+  letter-spacing: 0.3px;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 16px rgba(0, 102, 204, 0.35);
+  background: linear-gradient(135deg, #0052a3 0%, #003d7a 100%);
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 3rem 1.5rem;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .contact-section {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .contact-icon {
+    font-size: 2rem;
+  }
+
+  .contact-heading {
+    font-size: 1.15rem;
+  }
+
+  .contact .section-title {
+    font-size: 2rem;
+  }
+
+  .contact-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .contact-info a {
+    font-size: 0.95rem;
+  }
+
+  .social-link {
+    max-width: 100%;
+    padding: 0.5rem 1rem;
+  }
+
+  .social-link span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 2.5rem 1rem;
+  }
+
+  .contact-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact .section-title {
+    font-size: 1.8rem;
+  }
+
+  .contact-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .contact-icon {
+    font-size: 1.75rem;
+  }
+
+  .contact-heading {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .contact-info {
+    font-size: 0.9rem;
+  }
+
+  .contact-info a {
+    font-size: 0.95rem;
+  }
+
+  .social-link {
+    padding: 0.5rem 0.875rem;
+    max-width: 100%;
+  }
+
+  .social-link svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .social-link span {
+    font-size: 0.85rem;
+  }
+
+  .btn-primary {
+    padding: 0.875rem 2rem;
+    font-size: 0.95rem;
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .contact-button {
+    margin-top: 2.5rem;
+  }
+}
+

@@ -1,0 +1,686 @@
+.category-products-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+  position: relative;
+}
+
+/* Agri Solution Background */
+.category-products-page.agri-solution-bg {
+  background-color: #f8f9fa;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.category-products-page.agri-solution-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(248, 249, 250, 0.9);
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .category-products-page.agri-solution-bg {
+    background-attachment: scroll;
+  }
+  
+  .category-products-page.agri-solution-bg::before {
+    background: rgba(248, 249, 250, 0.92);
+  }
+}
+
+.category-products-page.agri-solution-bg .category-products-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Hydraulic Solution Background */
+.category-products-page.hydraulic-solution-bg {
+  background-color: #f8f9fa;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.category-products-page.hydraulic-solution-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(248, 249, 250, 0.9);
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .category-products-page.hydraulic-solution-bg {
+    background-attachment: scroll;
+  }
+  
+  .category-products-page.hydraulic-solution-bg::before {
+    background: rgba(248, 249, 250, 0.92);
+  }
+}
+
+.category-products-page.hydraulic-solution-bg .category-products-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Forgings & Machining Parts Background */
+.category-products-page.forgings-machining-bg {
+  background-color: #f8f9fa;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.category-products-page.forgings-machining-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(248, 249, 250, 0.9);
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .category-products-page.forgings-machining-bg {
+    background-attachment: scroll;
+  }
+  
+  .category-products-page.forgings-machining-bg::before {
+    background: rgba(248, 249, 250, 0.92);
+  }
+}
+
+.category-products-page.forgings-machining-bg .category-products-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Mining Consumables Background */
+.category-products-page.mining-consumables-bg {
+  background-color: #f8f9fa;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.category-products-page.mining-consumables-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(248, 249, 250, 0.9);
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .category-products-page.mining-consumables-bg {
+    background-attachment: scroll;
+  }
+  
+  .category-products-page.mining-consumables-bg::before {
+    background: rgba(248, 249, 250, 0.92);
+  }
+}
+
+.category-products-page.mining-consumables-bg .category-products-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Heavy Fabrication Background */
+.category-products-page.heavy-fabrication-bg {
+  background-color: #f8f9fa;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.category-products-page.heavy-fabrication-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(248, 249, 250, 0.9);
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .category-products-page.heavy-fabrication-bg {
+    background-attachment: scroll;
+  }
+  
+  .category-products-page.heavy-fabrication-bg::before {
+    background: rgba(248, 249, 250, 0.92);
+  }
+}
+
+.category-products-page.heavy-fabrication-bg .category-products-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Casting & Pulley Background */
+.category-products-page.casting-pulley-bg {
+  background-color: #f8f9fa;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.category-products-page.casting-pulley-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(248, 249, 250, 0.9);
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .category-products-page.casting-pulley-bg {
+    background-attachment: scroll;
+  }
+  
+  .category-products-page.casting-pulley-bg::before {
+    background: rgba(248, 249, 250, 0.92);
+  }
+}
+
+.category-products-page.casting-pulley-bg .category-products-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Spare & Standard Parts Background */
+.category-products-page.spare-standard-parts-bg {
+  background-color: #f8f9fa;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.category-products-page.spare-standard-parts-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(248, 249, 250, 0.9);
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .category-products-page.spare-standard-parts-bg {
+    background-attachment: scroll;
+  }
+  
+  .category-products-page.spare-standard-parts-bg::before {
+    background: rgba(248, 249, 250, 0.92);
+  }
+}
+
+.category-products-page.spare-standard-parts-bg .category-products-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Industrial Consumables Background */
+.category-products-page.industrial-consumables-bg {
+  background-color: #f8f9fa;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.category-products-page.industrial-consumables-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(248, 249, 250, 0.9);
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .category-products-page.industrial-consumables-bg {
+    background-attachment: scroll;
+  }
+  
+  .category-products-page.industrial-consumables-bg::before {
+    background: rgba(248, 249, 250, 0.92);
+  }
+}
+
+.category-products-page.industrial-consumables-bg .category-products-container {
+  position: relative;
+  z-index: 1;
+}
+
+.category-products-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.category-products-header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.back-button {
+  background-color: #0c112c;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #1a2342;
+  transform: translateX(-5px);
+}
+
+.category-products-title {
+  font-size: 3rem;
+  color: #0c112c;
+  margin: 0 0 1rem 0;
+  font-weight: 700;
+}
+
+.category-products-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 0;
+}
+
+.category-error {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #666;
+}
+
+.category-error h2 {
+  color: #0c112c;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Subcategories Section */
+.subcategories-section {
+  margin-bottom: 3rem;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.subcategories-title {
+  font-size: 1.8rem;
+  color: #0c112c;
+  margin: 0 0 1.5rem 0;
+  font-weight: 600;
+}
+
+.subcategories-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.subcategory-card {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #00D4FF;
+  transition: all 0.3s ease;
+}
+
+.subcategory-card:hover {
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.subcategory-name {
+  font-size: 1.2rem;
+  color: #0c112c;
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.subcategory-count {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Products Grid */
+.category-products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.category-product-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 16px rgba(12, 17, 44, 0.1), 0 0 0 1px rgba(12, 17, 44, 0.05);
+  display: flex;
+  flex-direction: column;
+  border: 2px solid transparent;
+  position: relative;
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+.category-product-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(12, 17, 44, 0.05) 0%, rgba(12, 17, 44, 0.02) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.category-product-card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 16px 40px rgba(12, 17, 44, 0.25), 
+              0 0 0 2px rgba(0, 212, 255, 0.3),
+              0 0 30px rgba(0, 212, 255, 0.15);
+  border-color: #00D4FF;
+}
+
+.category-product-card:hover::before {
+  opacity: 1;
+}
+
+.category-product-image-wrapper {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+}
+
+.category-product-image-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 0%, rgba(12, 17, 44, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.category-product-card:hover .category-product-image-wrapper::after {
+  opacity: 1;
+}
+
+.category-product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.category-product-card:hover .category-product-image {
+  transform: scale(1.1);
+}
+
+.category-product-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+  background-color: #f5f5f5;
+}
+
+.category-product-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+  z-index: 2;
+  background-color: #ffffff;
+}
+
+.category-product-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #0c112c;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+
+.category-product-card:hover .category-product-name {
+  color: #0c112c;
+}
+
+.category-product-description {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0 0 1rem 0;
+  line-height: 1.6;
+  flex: 1;
+  transition: color 0.3s ease;
+}
+
+.category-product-card:hover .category-product-description {
+  color: #444;
+}
+
+.category-product-features {
+  margin-top: auto;
+}
+
+.feature-count {
+  display: inline-block;
+  background-color: #0c112c;
+  color: #ffffff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.category-product-card:hover .feature-count {
+  background-color: #1a2342;
+  transform: scale(1.05);
+}
+
+.no-products {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #666;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1200px) {
+  .category-products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .subcategories-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 968px) {
+  .category-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .category-products-page {
+    padding: 1rem 0;
+  }
+
+  .category-products-container {
+    padding: 0 1.5rem;
+  }
+
+  .category-products-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .category-header-content {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .category-products-title {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .category-products-subtitle {
+    font-size: 1rem;
+    text-align: left;
+    width: 100%;
+  }
+
+  .subcategories-section {
+    padding: 1.5rem;
+  }
+
+  .subcategories-title {
+    font-size: 1.5rem;
+  }
+
+  .subcategories-list {
+    grid-template-columns: 1fr;
+  }
+
+  .category-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .category-product-image-wrapper {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-products-container {
+    padding: 0 1rem;
+  }
+
+  .category-products-title {
+    font-size: 1.75rem;
+  }
+
+  .category-products-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .subcategories-section {
+    padding: 1rem;
+  }
+
+  .category-products-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .category-product-image-wrapper {
+    height: 220px;
+  }
+
+  .category-product-info {
+    padding: 1.25rem;
+  }
+
+  .category-product-name {
+    font-size: 1.1rem;
+  }
+
+  .category-product-description {
+    font-size: 0.9rem;
+  }
+}
+

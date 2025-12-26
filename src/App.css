@@ -1,0 +1,26 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Improve section spacing on mobile */
+@media (max-width: 480px) {
+  section {
+    scroll-margin-top: 60px; /* Account for sticky header */
+  }
+}
