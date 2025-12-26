@@ -3,6 +3,17 @@ export interface ProductImage {
   alt: string;
 }
 
+// Helper function to process image paths
+// This will be called when the catalog is used to resolve image paths
+import { resolveProductImage } from '../utils/imageResolver';
+
+function processProductImages(images: { src: string; alt: string }[]): { src: string; alt: string }[] {
+  return images.map(img => ({
+    ...img,
+    src: resolveProductImage(img.src)
+  }));
+}
+
 export interface Product {
   id: string;
   name: string;
@@ -23,7 +34,7 @@ export interface Category {
   subCategories: SubCategory[];
 }
 
-export const productCatalog: Category[] = [
+const productCatalogData: Category[] = [
   {
     id: 'agri-solution',
     name: 'Agri Solution',
@@ -875,4 +886,22 @@ export const productCatalog: Category[] = [
     ]
   }
 ];
+
+// Process all product images to resolve their paths for production
+function processCatalogImages(catalog: Category[]): Category[] {
+  return catalog.map(category => ({
+    ...category,
+    subCategories: category.subCategories.map(subCategory => ({
+      ...subCategory,
+      products: subCategory.products.map(product => ({
+        ...product,
+        images: processProductImages(product.images)
+      }))
+    }))
+  }));
+}
+
+// Process and export the catalog with resolved image paths
+// This ensures all image paths work in both development and production
+export const productCatalog = processCatalogImages(productCatalogData);
 
