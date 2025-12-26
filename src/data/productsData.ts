@@ -37,7 +37,7 @@ export interface Category {
 const productCatalogData: Category[] = [
   {
     id: 'agri-solution',
-    name: 'Agri Solution',
+    name: 'Agri Solution - Solutions for your Agricultural Needs',
     subCategories: [
       {
         id: 'boom-sprayers',
