@@ -16,6 +16,7 @@ import Products from './components/Products';
 import ProductDetail from './components/ProductDetail';
 import AllProducts from './components/AllProducts';
 import CategoryProducts from './components/CategoryProducts';
+import NotFound from './components/NotFound';
 import './App.css';
 
 // Component to scroll to top on route change
@@ -62,6 +63,7 @@ function App() {
             <Route path="/product/:productId" element={<ProductDetail />} />
             <Route path="/products/all" element={<AllProducts />} />
             <Route path="/products/category/:categoryId" element={<CategoryProducts />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
       </Router>

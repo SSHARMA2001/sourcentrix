@@ -100,7 +100,12 @@ const ProductDetail: React.FC = () => {
 
   const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
     const target = e.target as HTMLImageElement;
-    target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="600" height="400"%3E%3Crect width="600" height="400" fill="%23f0f0f0"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dy=".3em" fill="%23999" font-family="Arial" font-size="18"%3E' + product.name + '%3C/text%3E%3C/svg%3E';
+    // Prevent the error from propagating and showing 404 in console
+    e.stopPropagation();
+    // Set a fallback image
+    target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="600" height="400"%3E%3Crect width="600" height="400" fill="%23f0f0f0"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dy=".3em" fill="%23999" font-family="Arial" font-size="18"%3E' + encodeURIComponent(product.name) + '%3C/text%3E%3C/svg%3E';
+    // Remove error event listener to prevent infinite loop
+    target.onerror = null;
   };
 
   const goToPreviousImage = () => {
@@ -207,7 +212,10 @@ const ProductDetail: React.FC = () => {
                           alt={otherProduct.images[0].alt}
                           className="other-product-image"
                           onError={(e) => {
-                            (e.target as HTMLImageElement).src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="300" height="200"%3E%3Crect width="300" height="200" fill="%23f0f0f0"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dy=".3em" fill="%23999" font-family="Arial" font-size="14"%3E' + otherProduct.name + '%3C/text%3E%3C/svg%3E';
+                            const target = e.target as HTMLImageElement;
+                            e.stopPropagation();
+                            target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="300" height="200"%3E%3Crect width="300" height="200" fill="%23f0f0f0"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dy=".3em" fill="%23999" font-family="Arial" font-size="14"%3E' + encodeURIComponent(otherProduct.name) + '%3C/text%3E%3C/svg%3E';
+                            target.onerror = null;
                           }}
                         />
                       ) : (
